@@ -1,0 +1,121 @@
+# NAVIGATION
+# main top navigation
+# be sure to add all languages
+
+en:
+  home:
+    name: Home
+    url: /index
+    type: page
+  ladies:
+    name: Ladies
+    url: /catalog
+    type: collection
+  girls:
+    name: Girls
+    url: /catalog
+    type: collection
+  logo:
+    name: Logo
+    url: /index
+    type: page
+  men:
+    name: Men
+    url: /catalog
+    type: collection
+  boys:
+    name: Boys
+    url: /catalog
+    type: collection
+  faq:
+    name: FAQ
+    url: /faq
+    type: page
+nl:
+  home:
+    name: Home
+    url: /index
+    type: page
+  ladies:
+    name: Dames
+    url: /cataloog
+    type: collection
+  girls:
+    name: Meisjes
+    url: /cataloog
+    type: collection
+  logo:
+    name: Logo
+    url: /index
+    type: page
+  men:
+    name: Mannen
+    url: /cataloog
+    type: collection
+  boys:
+    name: Jongens
+    url: /cataloog
+    type: collection
+  faq:
+    name: FAQ
+    url: /faq
+    type: page
+fr:
+  home:
+    name: Accueil
+    url: /index
+    type: page
+  ladies:
+    name: Femmes
+    url: /catalogue
+    type: collection
+  girls:
+    name: Filles
+    url: /catalogue
+    type: collection
+  logo:
+    name: Logo
+    url: /index
+    type: page
+  men:
+    name: Hommes
+    url: /catalogue
+    type: collection
+  boys:
+    name: Garçons
+    url: /catalogue
+    type: collection
+  faq:
+    name: FAQ
+    url: /faq
+    type: page
+cn:
+  home:
+    name: 常见问题
+    url: /index
+    type: page
+  ladies:
+    name: 女子
+    url: /mu-lu
+    type: collection
+  girls:
+    name: 女孩
+    url: /mu-lu
+    type: collection
+  logo:
+    name: Logo
+    url: /index
+    type: page
+  men:
+    name: 男子
+    url: /mu-lu
+    type: collection
+  boys:
+    name: 男孩
+    url: /mu-lu
+    type: collection
+  faq:
+    name: 常见问题
+    url: /chang-jian-wen-ti
+    type: page
+    

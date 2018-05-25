@@ -1,0 +1,78 @@
+<footer class="footer mt-5">
+  <div class="d-none d-sm-block logo"> <span>SPROX</span> </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 order-2 order-md-1">
+        <div class="row">
+          <div class="col-6 col-sm-4 mb-4 order-2 order-sm-1">
+            <h5>Collection</h5>
+            <ul class="nav flex-column">
+              {% for menu in site.data.nav-primary[page.lang] %}
+              {% assign active = nil %}
+              {% assign active = '/' | append: page.lang | append: menu[1].url | append: '.html' %}
+              {% if page.url == active %}
+              {% assign active = 'active' %}
+              {% endif %}
+              {% if menu[1].type == 'collection' %}
+              <li class="nav-item">
+                <a href="{{site.baseurl}}/{{page.lang}}{{ menu[1].url }}" title="{{ menu[1].name }}">{{ menu[1].name }}</a>
+              </li>
+              {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="col-6 col-sm-4 mb-4 order-3 order-sm-2">
+            <h5>Sprox</h5>
+            <ul class="nav flex-column">
+              {% for menu in site.data.nav-secondary[page.lang] %}
+              {% assign active = nil %}
+              {% assign active = '/' | append: page.lang | append: menu[1].url | append: '.html' %}
+              {% if page.url == active %}
+              {% assign active = 'active' %}
+              {% endif %}
+              <li class="nav-item">
+                <a href="{{site.baseurl}}/{{page.lang}}{{ menu[1].url }}" title="{{ menu[1].name }}">{{ menu[1].name }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="col-12 col-sm-4 mb-4 order-1 order-sm-3">
+            <h5>{{ site.data.translate.t['where_buy'][page.lang] }}</h5>
+            <p>{{ site.data.translate.t['where_buy_text'][page.lang] }}</p>
+            <p> <a class="btn btn-outline-primary btn-sm" href="{{site.baseurl}}/{{page.lang}}/{{ site.data.translate.t['find_store_url'][page.lang] }}"><i class="fas fa-shopping-cart"></i> {{ site.data.translate.t['find_store'][page.lang] }}</a> </p>
+          </div>
+          <div class="col-12 d-inline d-sm-none mb-4 order-3 social">
+            <h5>{{ site.data.translate.t['follow_us'][page.lang] }}</h5>
+            <a href="https://www.facebook.com/sprox"><i class="fab fa-facebook-square fa-3x"></i></a>
+            <a href="https://www.instagram.com/sprox_official"><i class="fab fa-instagram fa-3x"></i></a>
+            <span class="">#ilovemyshoes</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 order-1 order-md-2">
+        <div class="row">
+          <div class="col-sm-7 mb-4 newsletter">
+            <h5>{{ site.data.translate.t['receive_newsletter'][page.lang] }}</h5>
+            <form class="ng-untouched ng-pristine ng-invalid" id="newsletterForm" novalidate="">
+              <div class="input-group input-group-sm">
+                <input class="form-control border-0 ng-untouched ng-pristine ng-invalid" email="" formcontrolname="email" required="" type="email" placeholder="{{ site.data.translate.t['your_email_address'][page.lang] }}">
+                <span class="input-group-btn">
+                  <button class="btn" type="submit">
+                    <i class="fas fa-heart"></i> </button>
+                </span>
+              </div>
+            </form>
+          </div>
+          <div class="col-sm-5 mb-4 d-none d-sm-inline social">
+            <h5>{{ site.data.translate.t['follow_us'][page.lang] }}</h5>
+            <a href="https://www.facebook.com/sprox" rel="external"><i class="fab fa-facebook-square fa-3x"></i></a>
+            <a href="https://www.instagram.com/sprox_official" rel="external"><i class="fab fa-instagram fa-3x"></i></a>
+            <span class="">#ilovemyshoes</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="row copyright pb-4">
+      <div class="col"><small>{{ site.data.translate.t['copyright'][page.lang] }}</small></div>
+    </div>
+  </div>
+</footer>

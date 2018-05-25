@@ -1,0 +1,103 @@
+<form id="needs-validation" novalidate>
+  <div class="row">
+    <div class="col">
+      <h4 class="pb-3">{{ site.data.translate.t['company_info'][page.lang] }}</h4>
+      <div class="form-group">
+        <input class="form-control" name="companyName" placeholder="{{ site.data.translate.t['company_name'][page.lang] }}" type="text" required>
+        <div class="invalid-feedback">{{ site.data.translate.t['required'][page.lang] }}</div>
+      </div>
+      <div class="form-row">
+        <div class="col-12 col-sm-6">
+          <div class="form-group">
+            <input class="form-control" name="address1" placeholder="{{ site.data.translate.t['address1'][page.lang] }}" type="text" required>
+            <div class="invalid-feedback">{{ site.data.translate.t['required'][page.lang] }}</div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6">
+          <div class="form-group">
+            <input class="form-control" name="address2" placeholder="{{ site.data.translate.t['address2'][page.lang] }}" type="text"> </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-4 col-sm-4">
+          <div class="form-group">
+            <input class="form-control" name="zipCode" placeholder="{{ site.data.translate.t['zip'][page.lang] }}" type="text" required>
+            <div class="invalid-feedback">{{ site.data.translate.t['required'][page.lang] }}</div>
+          </div>
+        </div>
+        <div class="col-8 col-sm-4">
+          <div class="form-group">
+            <input class="form-control" name="city" placeholder="{{ site.data.translate.t['city'][page.lang] }}" type="text" required>
+            <div class="invalid-feedback">{{ site.data.translate.t['required'][page.lang] }}</div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4">
+          <div class="form-group">
+            <select class="form-control" name="country" required>
+              <option>{{ site.data.translate.t['country'][page.lang] }}</option> {% for country in site.data.countries %}
+              <option value="{{country.iso3}}">{{country.name}}</option> {% endfor %} </select>
+            <div class="invalid-feedback">{{ site.data.translate.t['required'][page.lang] }}</div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <input class="form-control" name="website" placeholder="{{ site.data.translate.t['website'][page.lang] }}" type="text"> </div>
+    </div>
+  </div>
+  
+  <hr class="form-divider"/>
+  
+  <div class="row">
+    <div class="col">
+      <h4 class="pb-3">{{ site.data.translate.t['personal_info'][page.lang] }}</h4>
+      <div class="form-row">
+        <div class="col-sm-2">
+          <div class="form-group">
+            <select class="form-control" name="contactTitle" required>
+              <option value="Mr">Mr.</option>
+              <option value="Mrs">Mrs.</option>
+              <option value="Miss">Miss.</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-12 col-sm-5">
+          <div class="form-group">
+            <input class="form-control" name="firstName" placeholder="{{ site.data.translate.t['first_name'][page.lang] }}" type="text" required>
+            <div class="invalid-feedback">{{ site.data.translate.t['required'][page.lang] }}</div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-5">
+          <div class="form-group">
+            <input class="form-control" name="lastName" placeholder="{{ site.data.translate.t['last_name'][page.lang] }}" type="text" required>
+            <div class="invalid-feedback">{{ site.data.translate.t['required'][page.lang] }}</div>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-12 col-sm-6">
+          <div class="form-group">
+            <input class="form-control" name="email" placeholder="{{ site.data.translate.t['email'][page.lang] }}" type="text" required>
+            <div class="invalid-feedback">{{ site.data.translate.t['required'][page.lang] }}</div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6">
+          <div class="form-group">
+            <input class="form-control" name="password" placeholder="{{ site.data.translate.t['password'][page.lang] }}" type="text" required>
+            <div class="invalid-feedback">{{ site.data.translate.t['required'][page.lang] }}</div>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-12 col-sm-6">
+          <div class="form-group">
+            <input class="form-control" name="phoneNumber" placeholder="{{ site.data.translate.t['phone'][page.lang] }}" type="text"> </div>
+        </div>
+        <div class="col-12 col-sm-6">
+          <div class="form-group">
+            <input class="form-control" name="mobileNumber" placeholder="{{ site.data.translate.t['mobile'][page.lang] }}" type="text"> </div>
+        </div>
+      </div>
+      <button class="btn btn-secondary mt-3" type="submit"><i class="fas fa-share"></i> {{ site.data.translate.t['submit'][page.lang] }}</button>
+    </div>
+  </div>
+</form>

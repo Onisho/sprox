@@ -1,0 +1,18 @@
+<ul class="nav">
+  <li class="nav-item"><a class="nav-link searchShop" href="{{ site.data.translate.t['find_store_url'][page.lang] }}"><i class="fas fa-shopping-cart"></i> {{ site.data.translate.t['search_store'][page.lang] }}</a></li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      {{site.l[page.lang]}}
+    </a>
+    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
+      {% for lang in site.lang %}
+        {% if page.type == 'posts' %}
+          {% assign other=site.posts | where: "ref", page.ref | where: "lang", lang | first %}
+        {% else %}
+          {% assign other=site.pages | where: "ref", page.ref | where: "lang", lang | first %}
+        {% endif %}
+        <a href="{% if other.url %}{{site.baseurl}}{{ other.url }}{% else %}/{{ lang }}/{% endif %}" class="dropdown-item {{ lang }}">{{site.l[lang]}}</a>
+      {% endfor %}
+    </div>
+  </li>
+</ul>

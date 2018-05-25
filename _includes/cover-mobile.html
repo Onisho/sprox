@@ -1,0 +1,10 @@
+<div class="col-6 item">
+  <a href="{{include.url}}" title="{{include.text}}">
+    <div> <img src="{{site.baseurl}}/img/{{include.image}}" class="img-fluid">
+      <div class="text white"> <small>{{ site.data.translate.t['from'][page.lang] }}</small>
+        <p>€ 29,95</p>
+      </div>
+      <div class="plus" style="background-color: {{include.color}};">+</div>
+    </div>
+    <h5 class="py-2 text-center">{{include.text}}</h5> </a>
+</div>

@@ -1,0 +1,46 @@
+.card {text-align:center;border:none;position:relative;}
+.card .card-body {padding:1rem 1rem;}
+.card .card-square {width:30px;height:30px;margin-left:calc(50% - 15px);margin-bottom:20px;}
+.card .card-title {margin-bottom:25px;}
+.card .card-img-square {width:40px;height:40px;position:absolute;}
+.card .card-img-square.right {right:0;}
+.card .card-img-square.left {left:0;}
+.card .card-img-square.bottom {bottom:0;}
+.card .card-img-square.top {top:0;}
+.card .card-img-top {padding:10px;}
+.card .h3, .card .h5 {padding: 1.25rem;}
+
+.card-dealer {text-align:left;}
+.card-dealer .card-title {margin-bottom:5px}
+.card-dealer .card-body {padding:.25rem;}
+.card-dealer .card-body p {margin-bottom:.25rem}
+
+.card-review {background-color:transparent;padding:15px;}
+.card-review .card-body {background-color:#fafafa;padding:1.25rem 1.25rem;}
+.reviews-float {position:relative;width:100%;}
+
+@media (min-width: 34em) {
+  .card-columns {-webkit-column-count:1;-moz-column-count:1;column-count:1;}
+}
+@media (min-width: 48em) {
+  .card-columns {-webkit-column-count:1;-moz-column-count:1;column-count:1;}
+  .card-review .card-body {background-color:#ffffff;}
+  .reviews-float {position:absolute;bottom:80px;width:100%;}
+  .card-review.one {bottom:65px;}
+  .card-review.two {bottom:0px;}
+  .card-review.three {bottom:30px;}
+
+}
+@media (min-width: 62em) {
+  .card-columns {-webkit-column-count:2;-moz-column-count:2;column-count:2;}
+  .card .card-body {padding:2rem 5rem;}
+  .card-dealer .card-body {padding:.25rem;}
+  .card-world .card-body {padding:0rem;}
+}
+@media (min-width: 75em) {
+  .card-columns {-webkit-column-count:2;-moz-column-count:2;column-count:2;}
+  .card .card-body {padding:3rem 5rem;}
+  .card-dealer .card-body {padding:.25rem;}
+  .card-review .card-body {padding: 2rem 4rem;}
+  .card-world .card-body {padding:1rem;}
+}

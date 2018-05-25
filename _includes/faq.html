@@ -1,0 +1,29 @@
+<h1 class="d-none">{{page.title}}</h1>
+<section>
+  <div class="container">
+    <div class="card-columns">
+      
+      {% assign var = page.ref | append: '-' | append: page.lang %}
+      
+      {% for item in site.data[var] %}
+      
+      {% if item.image == nil %}
+      <div class="card">
+        <div class="card-body">
+          <div class="card-square" style="background-color: {% include color.html %};"></div>
+          <h4 class="card-title">{{item.title}}</h4>
+          <p class="card-text">{{item.body}}</p>
+        </div>
+      </div> 
+      
+      {% else %}
+      <div class="card"> <img class="card-img-top" src="{{site.baseurl}}/img/{{item.image}}">
+        <div class="card-img-square bottom right" style="background-color: {% include color.html %};"></div>
+      </div> 
+      {% endif %} 
+      
+      {% endfor %} 
+      
+    </div>
+  </div>
+</section>

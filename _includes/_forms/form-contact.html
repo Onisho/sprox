@@ -1,0 +1,15 @@
+<form class="text-left" id="needs-validation" novalidate>
+  <div class="form-group">
+    <input class="form-control" formcontrolname="name" id="name" type="text" placeholder="{{ site.data.translate.t['name'][page.lang] }}" required>
+    <div class="invalid-feedback">{{ site.data.translate.t['required'][page.lang] }}</div>
+  </div>
+  <div class="form-group">
+    <input class="form-control" formcontrolname="emailAddress" id="email" type="email" placeholder="{{ site.data.translate.t['email'][page.lang] }}" required>
+    <div class="invalid-feedback">{{ site.data.translate.t['required'][page.lang] }}</div>
+  </div>
+  <div class="form-group">
+    <textarea class="form-control" formcontrolname="message" id="message" placeholder="{{ site.data.translate.t['message'][page.lang] }}" required></textarea>
+    <div class="invalid-feedback">{{ site.data.translate.t['required'][page.lang] }}</div>
+  </div>
+  <button class="btn btn-secondary" type="submit"><i class="fas fa-share"></i> {{ site.data.translate.t['submit'][page.lang] }}</button>
+</form>

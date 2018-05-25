@@ -1,0 +1,22 @@
+<form class="text-left" id="needs-validation" novalidate>
+  <div class="form-group">
+    <input class="form-control" formcontrolname="name" id="name" type="text" placeholder="{{ site.data.translate.t['name'][page.lang] }}" required>
+    <div class="invalid-feedback">{{ site.data.translate.t['required'][page.lang] }}</div>
+  </div>
+  <div class="form-group">
+    <input class="form-control" formcontrolname="emailAddress" id="email" type="email" placeholder="{{ site.data.translate.t['email'][page.lang] }}" required>
+    <div class="invalid-feedback">{{ site.data.translate.t['required'][page.lang] }}</div>
+  </div>
+  <div class="form-group">
+    <input class="form-control" formcontrolname="phone" id="phone" type="text" placeholder="{{ site.data.translate.t['phone'][page.lang] }}" required>
+    <div class="invalid-feedback">{{ site.data.translate.t['required'][page.lang] }}</div>
+  </div>
+  <div class="form-group">
+    <input class="form-control" formcontrolname="country" id="country" type="text" placeholder="{{ site.data.translate.t['country'][page.lang] }}" required>
+    <div class="invalid-feedback">{{ site.data.translate.t['required'][page.lang] }}</div>
+  </div>
+  <div class="form-group">
+    <textarea class="form-control" formcontrolname="remarks" id="remarks" placeholder="{{ site.data.translate.t['remarks'][page.lang] }}"></textarea>
+  </div>
+  <button class="btn btn-secondary" type="submit"><i class="fas fa-share"></i> {{ site.data.translate.t['submit'][page.lang] }}</button>
+</form>

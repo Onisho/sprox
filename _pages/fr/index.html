@@ -1,0 +1,117 @@
+---
+layout: cover
+title: Sprox
+lang: fr
+ref: homepage
+---
+
+<h1 class="d-none">{{page.title}}</h1>
+
+<!-- COVER DESKTOP -->
+<section class="cover d-none d-sm-block">
+  <div class="cover-img">
+    {% include cover-desktop.html url="/catalog/girls" title="girls" price="€ 24,95" color="#c19f99" text="chaussures filles" %}
+    {% include cover-desktop.html url="/catalog/ladies" title="ladies" price="€ 29,95" color="#D8CEC1" text="chaussures femmes" %}
+    {% include cover-desktop.html url="/catalog/boys" title="boys" price="€ 29,95" color="#ABC5D6" text="chaussures garçons" %}
+  </div>
+</section>
+
+<!-- COVER MOBILE -->
+<section class="d-sm-none cover-mobile">
+  <div class="row no-gutters">
+    {% include cover-mobile.html url="/catalog/ladies" image="mob1.jpg"  title="ladies" text="chaussures femmes" price="€ 29,95" color="#dac6af" %}
+    {% include cover-mobile.html url="/catalog/girls" image="mob2.jpg"  title="girls" text="chaussures filles" price="€ 24,95" color="#dab6c5" %}
+    {% include cover-mobile.html url="/catalog/men" image="mob3.jpg"  title="men" text="chaussures hommes" price="€ 44,95" color="#9a9a92" %}
+    {% include cover-mobile.html url="/catalog/boys" image="mob4.jpg"  title="boys" text="chaussures garçons" price="€ 29,95" color="#95a4b3" %}
+  </div>
+</section>
+
+<!-- TRENDS -->
+<section class="trends py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        {% include card-trend-image.html  text="Beau en kaki" image="trend1.jpg" url="/product/SX392719/KHA" text-align="right" %}
+      </div>
+      <div class="col-lg-6">
+        {% include card-trend-product.html text="Belle escarpin pour dames" price="€ 44,95" image="trend2.jpg" url="/product/SX392719/KHA" text-align="right" %}
+      </div>
+    </div>
+    <div class="row slogan text-center">
+      <div class="col-12 col-md-7 offset-md-4 mt-2 mb-5">
+        <div class="square d-none d-md-block" style="background-color: {% include color.html %};"></div>
+        <h2 class="h1">Feel-good fashion avec les chaussures SPROX</h2> </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 order-1 order-lg-2">
+        {% include card-trend-image.html  text="Effet métallique brillant" image="trend3.jpg" url="/product/SX003539/SIL" text-align="left" %}
+      </div>
+      <div class="col-lg-6 order-2 order-lg-1">
+        {% include card-trend-product.html text="Ballerines à la mode pour fille" price="€ 29,95" image="trend4.jpg" url="/product/SX003539/SIL" text-align="left" %}
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+{% include hero.html type="inline" image="hero3.jpg" title="Prête pour l'été" %}
+
+<!-- CURATOR -->
+<section class="curator py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h2 class="h3">#ILOVEMYSHOES<span></span></h2>
+        <p>partagez vos expériences sprox via les médias sociaux</p>
+        <p class="social"><a href="https://www.facebook.com/sprox" rel="external"><span class="fab fa-facebook-square fa-2x"></span></a> <a href="https://www.instagram.com/sprox_official" rel="external"><span class="fab fa-instagram fa-2x"></span></a></p>
+        <div id="curator-feed-sprox-b2c-2018"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="img-hero py-5 m"> <img src="{{site.baseurl}}/img/hero4.jpg" class="img-fluid">
+  <div class="reviews-float">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card-group">
+            
+            {% include card-review.html text="J’adore celles-ci, elles sont tellement confortables, je les porte chaque jour tant à l’extérieur qu’à l’intérieur. Tout le monde les trouve sympa." author="Jennifer, Berlin - Allemagne" class="one" %}
+            
+            {% include card-review.html text="J’ai acheté celles-ci pour ma mère et elle les adore. Elle dit qu’elles sont vraiment très confortables et elles les recommande à tout le monde." author="Ana, São Paulo - Brésil" class="two" %}
+            
+            {% include card-review.html text="Je les aime beaucoup, elles sont très confortables et donnent tellement bien quand je les porte que j’en ai commandé une nouvelle paire." author="Rachel, Londres - Royaume-Uni" class="three" %}
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORLD -->
+<section class="world py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h2 class="h3">SPROX retail dans le monde<span></span></h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-5 order-2 order-md-1">
+        <div class="card card-world">
+          <div class="card-body">
+            <div class="card-square" style="background-color: #D8AFAC;"></div>
+            <h4 class="card-title">Développé en Europe, vendu dans plus de 50 pays</h4>
+            <p class="card-text">Styles européens pour dames, hommes et enfants. Matériel de vente développé en interne pour une belle mise en évidence de notre collection. Des éléments modulaires pour une présentation optimale.</p>
+            <p> <a href="https://collection.sprox.com/en/login" class="btn btn-primary pink" target="_blank">Devenez un revendeur</a> </p>
+            <p> <a href="{{site.baseurl}}/{{page.lang}}/notre-presence" class="btn btn-outline-primary">Notre présence</a> </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-7 order-1 order-md-2"> <img src="{{site.baseurl}}/img/world.png" alt="world" class="img-fluid pt-4"> </div>
+    </div>
+  </div>
+</section>

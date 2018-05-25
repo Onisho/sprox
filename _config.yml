@@ -1,0 +1,49 @@
+#SITE SETTINGS
+baseurl: 
+exclude: ['README.md','Gemfile','Gemfile.lock']
+
+# LANGUAGES
+l:
+  en: English
+  nl: Nederlands
+  fr: Français
+  cn: Chinese (中文) 
+
+lang:
+  - "en"
+  - "nl"
+  - "fr"
+  - "cn"
+  
+# COLLECTIONS
+collections:
+  pages:
+    output: true
+    
+permalinks: pretty
+
+defaults:
+  -
+    scope:
+      path: "_pages/en"
+    values:
+      permalink: "/en/:title"
+      lang: "en"
+  -
+    scope:
+      path: "_pages/nl"
+    values:
+      permalink: "/nl/:title"
+      lang: "nl"
+  -
+    scope:
+      path: "_pages/fr"
+    values:
+      permalink: "/fr/:title"
+      lang: "fr"
+  -
+    scope:
+      path: "_pages/cn"
+    values:
+      permalink: "/cn/:title"
+      lang: "cn"

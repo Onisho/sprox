@@ -1,0 +1,68 @@
+---
+layout: cover
+title: Global presence
+lang: en
+ref: global
+---
+
+{% include hero.html type="top" image="global.jpg" title="SPROX retail in the world" %}
+
+<h1 class="d-none">{{page.title}}</h1>
+<section class="retail">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-md-5 order-2 order-md-1">
+        <div class="card card-world">
+          <div class="card-body">
+            <div class="card-square" style="background-color: {#D9AAAA};"></div>
+            <h4 class="card-title">Brand position</h4>
+            <p class="card-text">SPROX, fits in today's market as an comfortable footwear brand offering trendy, yet accessible fashion.</p>
+            <div class="row">
+              <div class="col-4"> <span class="d-block big">50</span> <span>countries and growing</span> </div>
+              <div class="col-4"> <span class="d-block big">2.5</span> <span>million pairs</span> </div>
+              <div class="col-4"> <span class="d-block big">75%</span> <span>sell-through before sales</span> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 col-md-7 order-1 order-md-2"> <img src="{{site.baseurl}}/img/world.png" alt="world" class="img-fluid pt-4"> </div>
+    </div>
+    <div class="row py-5">
+      <div class="col">
+        <div class="card-columns">
+          
+          {% include card-shop.html shop="Pitta Rosso" country="Italy" image="retail-pittarosso.jpg" %}
+          
+          {% include card-shop.html shop="Concept Store" country="Belgium" image="retail-conceptstore.jpg" %}
+          
+          {% include card-shop.html shop="Aokang" country="China" image="retail-aokang.jpg" %}
+          
+          {% include card-shop.html shop="Concept Store" country="Belgium" image="retail-conceptstore.jpg" %}
+
+          <div class="card my-3">
+            <div class="card-body">
+              <div class="card-square" style="background-color: #9E8F90;"></div>
+              <h4 class="card-title">
+                <div>WORLDWIDE SALES AGENTS WANTED</div>
+                <span></span>
+              </h4>
+              <p class="card-text">As an international brand SPROX is constantly looking for dedicated, proactive new sales agents to join our team. Are you the sales agent we are looking for?</p>
+              <p><a href="{{site.baseurl}}/{{page.lang}}/work-at-sprox" class="btn btn-outline-primary">Apply now</a></p>
+            </div>
+          </div>
+          
+          {% include card-shop.html shop="Lola Liza" country="France" image="retail-lolaliza.jpg" %}
+          
+          {% include card-shop.html shop="Brantano" country="Belgium" image="retail-brantano.jpg" %}
+
+          <div class="card my-3">
+            <div class="card-body">
+              <p class="card-text">SPROX completes market studies throughout the globe to determine the need for new retailers based on market requirements. The  goal is to ensure that we can provide the retailers increased sales volumes and high profits and that we can offer the consumers the full SPROX Brand Experience.</p>
+              <p> <a href="{{site.baseurl}}/{{page.lang}}/contact" class="btn btn-primary">become retailer</a> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

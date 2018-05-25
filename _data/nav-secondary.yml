@@ -1,0 +1,103 @@
+# NAVIGATION
+# main top navigation
+# be sure to add all languages
+
+en:
+  about:
+    name: About us
+    url: /about-us
+    type: page
+  faq:
+    name: FAQ
+    url: /faq
+    type: page
+  pr:
+    name: SPROX PR
+    url: /public-relations
+    type: page
+  contact:
+    name: Contact
+    url: /contact
+    type: page
+  global:
+    name: Global presence
+    url: /global-presence
+    type: page
+  register:
+    name: Become a retailer
+    url: /register
+    type: page
+    
+nl:
+  about:
+    name: Over ons
+    url: /over-ons
+    type: page
+  faq:
+    name: FAQ
+    url: /faq
+    type: page
+  pr:
+    name: SPROX PR
+    url: /public-relations
+    type: page
+  contact:
+    name: Contact
+    url: /contact
+    type: page  
+  global:
+    name: Wereldwijde aanwezigheid
+    url: /wereldwijde-aanwezigheid
+    type: page
+  register:
+    name: Retailer worden
+    url: /registreer
+    type: page
+    
+fr:
+  about:
+    name: À propos SPROX
+    url: /a-propos-sprox
+    type: page
+  faq:
+    name: FAQ
+    url: /faq
+    type: page
+  pr:
+    name: SPROX PR
+    url: /relations-publiques
+    type: page
+  contact:
+    name: Contact
+    url: /contact
+    type: page  
+  global:
+    name: Notre présence
+    url: /notre-presence
+    type: page
+  register:
+    name: Devenir un détaillant
+    url: /registre
+    type: page
+    
+cn:
+  about:
+    name: 关于我们
+    url: /guan-yu-wo-men
+    type: page
+  faq:
+    name: 常见问题
+    url: /chang-jian-wen-ti
+    type: page
+  pr:
+    name: 订阅SPROX最新消息
+    url: /gong-gong-guan-xi
+    type: page
+  contact:
+    name: 联系
+    url: /lian-xi
+    type: page
+  global:
+    name: 我们无处不在
+    url: /wo-men-wu-chu-bu-zai
+    type: page

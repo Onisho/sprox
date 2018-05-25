@@ -1,0 +1,170 @@
+t:
+  ## cover ##
+  from:
+    en: from
+    nl: vanaf
+    fr: à partir de
+    cn: 起
+    
+  ## top ##
+  search_store:
+    en: Search store
+    nl: Winkel zoeken
+    fr: Points de vente
+    cn: 搜索店铺
+  retailer_login:
+    en: Retailer login
+    nl: Retailer login
+    fr: Connexion détaillants
+    cn: 零售商登陆
+
+  ## footer - find store ##
+  where_buy:
+    en: Where to buy
+    nl: Waar te koop
+    fr: Nos revendeurs
+    cn: 哪里订购
+  where_buy_text:
+    en: Buy SPROX shoes online or in a local store.
+    nl: Koop SPROX schoenen online of in een winkel in jouw buurt.
+    fr: Achetez vos chaussures SPROX en ligne ou visitez un revendeur près de chez vous.
+    cn: 在网上或本地商店购买SPROX鞋
+  find_store:
+    en: Find store
+    nl: Winkel vinden
+    fr: Points de vente
+    cn: 寻找商店
+  find_store_url:
+    en: stores
+    nl: winkels
+    fr: points-de-vente
+    cn: shang-dian
+    
+  ## footer - newsletter ##
+  receive_newsletter:
+    en: Receive our newsletter
+    nl: Ontvang onze nieuwsbrief
+    fr: Abonnez-vous à notre newsletter
+    cn: 获取我们的最新消息
+  your_email_address:
+    en: Your email-address
+    nl: Jouw emailadres
+    fr: E-mail
+    cn: 您的邮箱地址
+    
+  ## footer - social ##
+  follow_us:
+    en: Follow us on social media
+    nl: Volg ons op sociale media
+    fr: Partager c'est aimer
+    cn: 在社交媒体上关注我们
+    
+  ## footer - copyright ##
+  copyright:
+    en: Copyright © 2018 SPROX - A division of CORTINA
+    nl: Copyright © 2018 SPROX - Een divisie van CORTINA
+    fr: Copyright © 2018 SPROX - Une division de CORTINA
+    cn: 版权所有© 2018 SPROX - 葛天那的一个分支
+    
+  ## form input
+  company_info:
+    en: Company info
+    nl: Bedrijfsgegevens
+    fr: Information d'entreprise
+    cn:
+  personal_info:
+    en: Personal info
+    nl: persoonlijke gegevens
+    fr: Informations personnelles
+    cn:
+  company_name:
+    en: Company name
+    nl: Bedrijfsnaam
+    fr: Nom de l'entrepris
+    cn:
+  address1:
+    en: Address 1
+    nl: Adres 1
+    fr: Adresse 1
+    cn:
+  address2:
+    en: Address 2
+    nl: Adres 2
+    fr: Adresse 2
+    cn:
+  zip:
+    en: Zip code
+    nl: Postcode
+    fr: Code postal
+    cn:
+  city:
+    en: City
+    nl: Plaats
+    fr: Ville
+    cn:
+  country:
+    en: Country
+    nl: Land
+    fr: Pays
+    cn: 国家
+  website:
+    en: Website
+    nl: Website
+    fr: Site Internet
+    cn:
+  name:
+    en: Name
+    nl: Naam
+    fr: Nom
+    cn: 姓名
+  first_name:
+    en: First name
+    nl: Voornaam
+    fr: Prénom
+    cn:
+  last_name:
+    en: Last name
+    nl: Familienaam
+    fr: Nom de famille
+    cn:
+  email:
+    en: Email
+    nl: Email
+    fr: E-mail
+    cn: 邮箱地址
+  password:
+    en: Password
+    nl: Paswoord
+    fr: Mot de passe
+    cn:
+  phone:
+    en: Phone
+    nl: Telefoon
+    fr: Téléphone
+    cn: 电话
+  mobile:
+    en: Mobile
+    nl: Mobiel
+    fr: Portable
+    cn:
+  message:
+    en: Message
+    nl: Bericht
+    fr: Message
+    cn: 信息
+  remarks:
+    en: Remarks
+    nl: Opmerkingen
+    fr: Remarques
+    cn: 备注
+  submit:
+    en: Submit
+    nl: Verzenden
+    fr: Envoyer
+    cn: 提交
+  required:
+    en: Required
+    nl: Verplicht
+    fr: Obligatoires
+    cn: 必填
+  

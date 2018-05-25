@@ -1,0 +1,20 @@
+{% if include.type == "top" %}
+
+<section class="img-hero mb-5 m {{include.type}}" style="background-image: url('{{site.baseurl}}/img/{{include.image}}')">
+  <div class="img-hero-text">
+    <h2 data-i18n="global-presence-title">{{include.title}}</h2>
+  </div>
+</section>
+
+{% elsif include.type == "inline" %}
+
+<section class="img-hero mb-5 m {{include.type}}">
+  <img src="{{site.baseurl}}/img/{{include.image}}" class="img-fluid" />
+  <div class="img-hero-text">
+    <h2 data-i18n="global-presence-title">{{include.title}}</h2>
+  </div>
+</section>
+
+
+
+{% endif %}

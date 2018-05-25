@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-md navbar-sprox">
+  <a class="navbar-brand d-inline-block d-md-none" href="/">SPROX</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      
+      {% for menu in site.data.nav-primary[page.lang] %}
+      {% assign active = nil %}
+      {% assign active = '/' | append: page.lang | append: menu[1].url | append: '.html' %}
+      
+      <li class="text-center {% if menu[0] == 'logo' %} d-none d-md-inline {% endif %} {{menu[0]}} {% if forloop.first %}first{% endif %} {% if forloop.last %}last{% endif %} nav-item">
+        <a href="{{site.baseurl}}/{{page.lang}}{{ menu[1].url }}" class="nav-link" title="{{ menu[1].name }}">{{ menu[1].name }}</a>
+      </li>
+      {% endfor %}
+    
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,68 @@
+---
+layout: cover
+title: 我们无处不在
+lang: cn
+ref: global
+---
+
+{% include hero.html type="top" image="global.jpg" title="SPROX在全球的零售" %}
+
+<h1 class="d-none">{{page.title}}</h1>
+<section class="retail">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-md-5 order-2 order-md-1">
+        <div class="card card-world">
+          <div class="card-body">
+            <div class="card-square" style="background-color: #D9AAAA;"></div>
+            <h4 class="card-title">品牌定位</h4>
+            <p class="card-text">Sprox,一个即舒适而又方便，即时尚却又契合当今市场潮流的鞋类品牌.</p>
+            <div class="row">
+              <div class="col-4"> <span class="d-block big">50</span> <span>个国家并增长中</span> </div>
+              <div class="col-4"> <span class="d-block big">2.5</span> <span>百万双</span> </div>
+              <div class="col-4"> <span class="d-block big">75%</span> <span>销售前已完成销售流通</span> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 col-md-7 order-1 order-md-2"> <img src="{{site.baseurl}}/img/world.png" alt="world" class="img-fluid pt-4"> </div>
+    </div>
+    <div class="row py-5">
+      <div class="col">
+        <div class="card-columns">
+          
+          {% include card-shop.html shop="Pitta Rosso" country="Italy" image="retail-pittarosso.jpg" %}
+          
+          {% include card-shop.html shop="Concept Store" country="Belgique" image="retail-conceptstore.jpg" %}
+          
+          {% include card-shop.html shop="Aokang" country="Chine" image="retail-aokang.jpg" %}
+          
+          {% include card-shop.html shop="概念商店" country="Belgique" image="retail-conceptstore.jpg" %}
+
+          <div class="card my-3">
+            <div class="card-body">
+              <div class="card-square" style="background-color: #9E8F90;"></div>
+              <h4 class="card-title">
+                <div>销售代理全球招募中</div>
+                <span></span>
+              </h4>
+              <p class="card-text">作为国际品牌，SPROX一直在寻找积极主动并且敬业的销售代理加入我们的团队。 你是我们正在寻找的销售代理吗？</p>
+              <p><a href="{{site.baseurl}}/{{page.lang}}/zai-sprox-gong-zuo" class="btn btn-outline-primary">现在申请</a></p>
+            </div>
+          </div>
+          
+          {% include card-shop.html shop="Lola Liza" country="France" image="retail-lolaliza.jpg" %}
+          
+          {% include card-shop.html shop="Brantano" country="Belgique" image="retail-brantano.jpg" %}
+
+          <div class="card my-3">
+            <div class="card-body">
+              <p class="card-text">SPROX在全球范围做市场调研，并确定基于市场需求确定我们新零售商的需求。我们的目标是确保我们能够为零售商带来更高的销售量和更高的利润，并且为消费者提供完整的SPROX品牌体验。</p>
+              <p> <a href="{{site.baseurl}}/{{page.lang}}/lian-xi" class="btn btn-primary">成为零售商</a> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,39 @@
+--- 
+layout: default 
+title: Contact 
+lang: en 
+ref: contact 
+---
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 order-2">
+        <div class="block">
+          <div class="block-body">
+            <div class="text-center">
+              <p class="lead">We are always open to feedback and suggestions</p>
+              <h2><a href="https://www.facebook.com/sprox" rel="external"><span class="fab fa-facebook-square"></span></a></h2>
+              <h4>Ask your question</h4>
+              <p> <a href="mailto:customerservice@sprox.com">customerservice@sprox.com</a> </p>
+              <h4 class="mt-5">Or send a message</h4> </div>
+            
+            {% include _forms/form-contact.html %}
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 order-1">
+        <div class="card">
+          <div class="title-float right">
+            <div class="title-table">
+              <div class="title-table-cell">
+                <h1 class="h3">Contact<span></span></h1></div>
+            </div>
+          </div>
+          <img class="card-img-top" src="{{site.baseurl}}/img/contact.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
